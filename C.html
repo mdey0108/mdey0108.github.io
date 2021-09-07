@@ -1,51 +1,66 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
-  
-  <title>CountDown</title>
-  <link rel = "icon" type = "image/png" href = "images/index.jpg">
+
+  <title>Image Gallery</title>
+  <link rel="icon" type="image/png" href="images/index.jpg">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-  <script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("Jan 1 2021 00:00:00").getTime();
-    // Update the count down every 1 second
-    var x = setInterval(function() 
-    {
-      // Get today's date and time
-      var now = new Date().getTime();
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      // Output the result in an element with id="demo"
-      document.getElementById("demo").innerHTML = days + "days\n " + hours + "hours\n"+ minutes + "minutes\n" + seconds + "seconds\n ";
-      // If the count down is over, write some text 
-      if (distance < 0) 
-      {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-      }
-    }, 1000);
-    </script>
+  <noscript>
+    <link rel="stylesheet" href="assets/css/noscript.css" />
+  </noscript>
 
 </head>
-  <body>
-    <div id="wrapper">
-      <section id="main">
-        <img src="images/change.jpeg" width="200" height="120px">
-        <p id="demo"></p>
-      </section>
-      <footer id="footer">
-        <ul class="copyright">
-          <li>&copy; Mahesh Kumar Dey</li><li>Design: <a href="#"  target=" " >Mahi</a></li>
-        </ul>
-      </footer>
-    </div>
-    </body>
+
+<body>
+  <div id="gallery" style="margin: auto;
+  border: 5px solid #3bb8df8e;
+  padding: 10px;">
+
+    <img src="images/mahesh-001.jpg" width="400" height="500">
+    <img src="images/mahesh-002.jpg" width="400" height="500">
+    <img src="images/mahesh-003.jpg" width="400" height="500">
+    <img src="images/mahesh-004.jpg" width="400" height="500">
+    <img src="images/mahesh-005.jpg" width="400" height="500">
+    <img src="images/mahesh-006.jpg" width="400" height="500">
+    <img src="images/mahesh-007.jpg" width="400" height="500">
+    <img src="images/mahesh-008.jpg" width="400" height="500">
+    <img src="images/mahesh-009.jpg" width="400" height="500">
+    <img src="images/mahesh-010.jpg" width="400" height="500">
+    <img src="images/mahesh-011.jpg" width="400" height="500">
+    <img src="images/mahesh-012.jpg" width="400" height="500">
+    <img src="images/mahesh-013.jpg" width="400" height="500">
+    <img src="images/mahesh-014.jpg" width="400" height="500">
+    <img src="images/mahesh-015.jpg" width="400" height="500">
+    <img src="images/mahesh-016.jpg" width="400" height="500">
+    <img src="images/mahesh-017.jpg" width="400" height="500">
+    <img src="images/mahesh-018.jpg" width="400" height="500">
+    <img src="images/mahesh-019.jpg" width="400" height="500">
+    <img src="images/mahesh-020.jpg" width="400" height="500">
+    <img src="images/mahesh-021.jpg" width="400" height="500">
+    <img src="images/mahesh-022.jpg" width="400" height="500">
+    <img src="images/mahesh-023.jpg" width="400" height="500">
+    <img src="images/mahesh-024.jpg" width="400" height="500">
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <footer id="footer">
+    <ul class="copyright">
+      <li>&copy; Mahesh Kumar Dey</li>
+      <li>Design: <a href="#" target=" ">Mahi</a></li>
+    </ul>
+  </footer>
+  </div>
+</body>
+
 </html>
