@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3x3 Clickable Grid</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .grid-item {
+            aspect-ratio: 1/1; /* Makes each div square */
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .grid-item:hover {
+            background-color: #e0e0e0;
+        }
+        
+        /* Optional: Add some text to identify each div */
+        .grid-item::before {
+            content: "Item " attr(data-index);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item" data-index="1"></div>
+        <div class="grid-item" data-index="2"></div>
+        <div class="grid-item" data-index="3"></div>
+        <div class="grid-item" data-index="4"></div>
+        <div class="grid-item" data-index="5"></div>
+        <div class="grid-item" data-index="6"></div>
+        <div class="grid-item" data-index="7"></div>
+        <div class="grid-item" data-index="8"></div>
+        <div class="grid-item" data-index="9"></div>
+    </div>
 
+    <script>
+        // Optional: Add click handlers if you want to make them links
+        document.querySelectorAll('.grid-item').forEach(item => {
+            item.addEventListener('click', function() {
+                // You can add href functionality here or directly in HTML
+                // For example:
+                // window.location.href = 'your-link-here';
+            });
+        });
+    </script>
+</body>
+</html>
