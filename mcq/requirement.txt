@@ -1,0 +1,41 @@
+# Requirement: Funny Simple MCQ implementation for Software Engineers
+
+## 1. Project Overview
+Create a single Web Page containing a humorous, nonsense Multiple Choice Question (MCQ) quiz tailored for Software Engineers. The goal is entertainment.
+
+## 2. Functional Requirements
+
+### 2.1 Questions
+Maintain a pool of **at least 30 "nonsense" or satirical questions** related to software engineering life.
+
+**Selection Logic:**
+- Randomly select **5 unique questions** from the pool each time the quiz is started.
+- Ensure replayability by varying the questions.
+
+**Example Question Types:**
+- Git disasters (Merge conflicts, force push).
+- Debugging nightmares (Memory leaks, print debugging).
+- Language wars (Tabs vs Spaces, Vim exit).
+- Lifestyle stereotypes (Coffee, Hoodies, Dark Mode).
+
+### 2.2 Scoring Logic & Taglines
+The system should calculate a "persona" based on the answers. (Simple logic: Random or Majority based, or just points-based mapping).
+
+**End Screen Taglines:**
+1. **"The 10x Engineer"** (If they answer professionally/arrogantly)
+2. **"The StackOverflow Copy-Paster"** (If they choose the lazy options)
+3. **"The Chaos Monkey"** (If they choose destructive options like force push)
+4. **"The 'It Works on My Machine' Certified Developer"** (If they chose unsure options)
+5. **"Ghante ka Engineer"** (If they are completely clueless/useless)
+
+### 2.3 User Interface
+- **Theme:** Dark Mode (obviously).
+- **Style:** Minimalist, clean, maybe some confetti effects on completion.
+- **Input:** Radio buttons for answers.
+- **Action:** A "Submit" or "Compile Results" button at the end.
+
+## 3. Technical Constraints
+- **Stack:** Pure HTML, CSS, and Vanilla JavaScript (No frameworks needed for this simplicity).
+- **Single File:** Can be contained in `index.html` or separated into `script.js` and `styles.css`.
+- **Responsive:** Should look good on mobile (while crying in the server room).
+

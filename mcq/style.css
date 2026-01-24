@@ -1,0 +1,146 @@
+:root {
+    --bg-color: #1e1e1e;
+    --card-bg: #2d2d2d;
+    --text-color: #e0e0e0;
+    --accent-color: #007acc;
+    /* VS Code Blue */
+    --accent-hover: #005f9e;
+    --success-color: #4caf50;
+    --danger-color: #f44336;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Fira Code', 'Consolas', monospace;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+}
+
+header p {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+    background-color: var(--accent-hover);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.option-btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    text-align: left;
+    background-color: #3e3e3e;
+    border: 1px solid #555;
+}
+
+.option-btn:hover {
+    background-color: #505050;
+    border-color: var(--accent-color);
+}
+
+.question-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.user-inputs {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-inputs input {
+    padding: 12px;
+    border: 1px solid #555;
+    background-color: #3e3e3e;
+    color: var(--text-color);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.user-inputs input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.result-card {
+    animation: fadeIn 0.5s;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--success-color);
+    margin: 20px 0;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: #666;
+}
